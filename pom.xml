@@ -27,8 +27,8 @@
     </profiles>
     <groupId>com.cinema</groupId>
     <artifactId>job4j_cinema</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>job4j_cinema</name>
+    <version>1.0</version>
+    <name>cinema</name>
     <description>job4j_cinema</description>
     <properties>
         <java.version>18</java.version>

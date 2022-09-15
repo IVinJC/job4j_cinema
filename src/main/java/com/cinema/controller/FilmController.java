@@ -37,17 +37,15 @@ public class FilmController {
     }
 
     @PostMapping("/createticket")
-    public String sendFilm(@ModelAttribute("ticket") Ticket ticket) {
+    public String createTicket(@ModelAttribute("ticket") Ticket ticket) {
         User ticketUser = ticket.getUser();
         User user = userService.add(ticketUser);
         ticketUser.setId(user.getId());
         Optional<Film> filmOptional = filmService.findById(ticket.getFilm().getId());
         Film film = filmOptional.orElse(null);
-        assert film != null;
         ticket.setFilm(film);
         Optional<Ticket> ticketOptional = ticketService.add(ticket);
         Ticket ticketOrElse = ticketOptional.orElse(null);
-        assert ticketOrElse != null;
         int id = ticketOrElse.getId();
         return "redirect:/result?id=" + id;
     }
