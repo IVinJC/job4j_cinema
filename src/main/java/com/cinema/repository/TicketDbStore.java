@@ -37,7 +37,7 @@ public class TicketDbStore {
                 }
             }
         } catch (Exception e) {
-            log.error("", e);
+            log.error("Ошибка доступа к базе данных", e);
         }
         return ticketOptional;
     }
@@ -67,7 +67,7 @@ public class TicketDbStore {
                 }
             }
         } catch (Exception e) {
-            log.error("", e);
+            log.error("Ошибка доступа к базе данных", e);
         }
         return ticket;
     }
