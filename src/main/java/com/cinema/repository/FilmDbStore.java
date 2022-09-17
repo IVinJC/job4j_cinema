@@ -8,11 +8,8 @@ import org.springframework.stereotype.Repository;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 @Repository
 @RequiredArgsConstructor
@@ -77,8 +74,6 @@ public class FilmDbStore {
             Collection<Integer> values = map.values();
             films.addAll(values);
         }
-       /* listMap.stream()
-                .map(integerIntegerMap -> films.addAll(new HashSet<>(integerIntegerMap.values())));*/
         return films;
     }
 

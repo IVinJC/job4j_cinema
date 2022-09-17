@@ -8,6 +8,6 @@
 		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
 		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
 		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
-    <include file="scripts/ddl_cinema.sql" relativeToChangelogFile="true"/>
-    <include file="scripts/dml_cinema.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/ddl_cinema_001.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/dml_cinema_002.sql" relativeToChangelogFile="true"/>
 </databaseChangeLog>
